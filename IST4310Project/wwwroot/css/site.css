@@ -1,0 +1,57 @@
+html {
+  font-size: 14px;
+}
+
+@media (min-width: 768px) {
+  html {
+    font-size: 16px;
+  }
+}
+
+.btn:focus, .btn:active:focus, .btn-link.nav-link:focus, .form-control:focus, .form-check-input:focus {
+  box-shadow: 0 0 0 0.1rem white, 0 0 0 0.25rem #258cfb;
+}
+
+html {
+  position: relative;
+  min-height: 100%;
+}
+
+body {
+  margin-bottom: 60px;
+}
+.style43 {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: xx-large;
+}
+.p-style {
+    margin-top: .5ex;
+    font-weight: bold;
+}
+.s-style {
+    margin-left: 1em;
+  
+}
+.s-style-ex {
+    margin-left: 3em;
+}
+.s-homescreen {
+    background-image: linear-gradient(to top, rgb(3,3,3), grey);
+    color: white;
+    text-align: left
+}
+.s-homescreen-info {
+    margin-top: 1em;
+}
+.boxall {
+    display: flex;
+    background: #F5E8DF;
+    height: 132px;
+    width: 100%;
+    border-bottom: 2px solid #fff;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color: #786450;
+    transition: all 0.4s ease-in-out;
+}
