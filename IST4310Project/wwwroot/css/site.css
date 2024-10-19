@@ -43,6 +43,10 @@ body {
 .s-homescreen-info {
     margin-top: 1em;
 }
+.s-homescreen-logout {
+    margin-top: 1em;
+    text-align: right;
+}
 .boxall {
     display: flex;
     background: #F5E8DF;
