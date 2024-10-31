@@ -10,15 +10,16 @@
 <br />
 <br />
 
-<div style="text-align: center; border-style: ridge" >
+<div style="text-align: center; border-style: ridge">
     <br />
     <br />
-    @using(Html.BeginForm("StudentHome", "Home", FormMethod.Post)) {
+    @using (Html.BeginForm("StudentHome", "Home", FormMethod.Post))
+    {
         <label>UserName:</label>
         @Html.TextBoxFor(m => m.UserName)
         <br />
         <div class="p-style">
-            <label >Password:</label>
+            <label>Password:</label>
             @Html.PasswordFor(m => m.Password)
 
         </div>
@@ -27,6 +28,53 @@
         <input type="submit" value="Log In" />
     }
     <span style="color: red">@Model.AuthenticationError</span> <br />
-    <a href="#">New User </a> <span class="s-style" >|</span> <a href="#">Forgot Password? </a>
+    <a id="modal-launcher" href="#">New User </a> <span class="s-style">|</span> <a href="#">Forgot Password? </a>
     <br />
+</div>
+
+
+<div id="modal-background"></div> 
+<div id="modal-content">
+    <div id="new-user-form">
+        <h3 style="color: brown;">New User Registration Form</h3>
+        <table>
+            <tr>
+                <td class="s-label"><span>FirstName:</span></td>
+                <td><input id="firstName" type="text" /></td>
+            </tr>
+            <tr>
+                <td class="s-label"><span>LastName:</span></td>
+                <td><input id="lastName" type="text" /></td>
+            </tr>
+            <tr>
+                <td class="s-label"><span>Email:</span></td>
+                <td><input id="email" type="text" /></td>
+            </tr>
+            <tr>
+                <td class="s-label"><span>Password:</span></td>
+                <td><input id="password" type="password" /></td>
+            </tr>
+            <tr>
+                <td class="s-label"><span>Gender:</span></td>
+                <td><input id="gender" type="text" /></td>
+            </tr>
+            <tr>
+                <td class="s-label"><span>Height:</span></td>
+                <td><input id="height" type="text" /></td>
+            </tr>
+            <tr>
+                <td class="s-label"><span>Department:</span></td>
+                <td><input id="dept" type="text" /></td>
+            </tr>
+            <tr>
+                <td class="s-label"><span>Major:</span></td>
+                <td><input id="major" type="text" /></td>
+            </tr>
+        </table>
+    </div>
+    <div style="padding-top: 20px;text-align: right; padding-right: 20px">
+        <button id="modal-user-create">Create</button>
+        <button id="modal-close">Close [X]</button>
+
+    </div>
 </div>
